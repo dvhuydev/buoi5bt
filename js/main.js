@@ -104,7 +104,7 @@ function Sumscore(math, literature, english, area, subperson) {
     subPerson();
 
     let sumScore = 0;
-    sumScore = (math + literature + english + priArea() + subPerson());
+    sumScore = (math + literature + english + priArea() + subPerson()).toFixed(2);
     return sumScore;
 }
 Sumscore();
