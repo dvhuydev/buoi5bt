@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="card w-50 m-auto">
+            <div class="card-header">
+                <h3>Lesson 1: Admissions Manager</h3>
+            </div>
+            <div class="card-body">
+                <h2>Input score of 3 subjects</h2>
+            </div>
+            <div class="card-body">
+                <input type="number" id="mathScore" class="form-control my-2" placeholder="Math Score">
+                <input type="number" id="literatureScore" class="form-control my-2" placeholder="Literature Score">
+                <input type="number" id="englishScore" class="form-control my-2" placeholder="English Score">
+            </div>
+            <div class="card-body">
+                <h4>Priority Area</h4>
+                <select id="area">
+                    <option value="">Area</option>
+                    <option value="areaX">No Area (X)</option>
+                    <option value="areaA">Area A</option>
+                    <option value="areaB">Area B</option>
+                    <option value="areaC">Area C</option>
+                </select>
+            </div>
+
+            <div class="card-body">
+                <h4>Subject Person</h4>
+                <select id="subject">
+                    <option value="">Subject Person</option>
+                    <option value="subject0">0</option>
+                    <option value="subject1">1</option>
+                    <option value="subject2">2</option>
+                    <option value="subject3">3</option>
+                </select>
+            </div>
+
+            <div class="card-footer mt-4">
+                <button id="btnEnter" onclick="admissionsManager()" class="btn w-50 btn-danger">Check score</button>
+
+                <div class="alert alert-danger mt-3 py-4">
+                    <span id="admissionsCheckingscore"></span>
+                </div>
+
+                <div class="alert alert-success mt-3 py-5">
+                    <span id="admissionsChecking"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="card w-50 m-auto">
+            <div class="card-header">
+                <h3>Lesson 2: Electric Pay</h3>
+            </div>
+            <div class="card-body">
+                <h2>Input score of 3 subjects</h2>
+            </div>
+            <div class="card-body">
+                <input type="text" id="customerName" class="form-control my-2" placeholder="Input your Name">
+                <input type="number" id="customerElectric" class="form-control my-2" placeholder="Input Kw">
+
+            </div>
+
+
+            <div class="card-footer mt-4">
+                <button id="btnEnter" onclick="electricPay()" class="btn w-50 btn-danger">Electric Checking</button>
+
+                <div class="alert alert-danger mt-3 py-4">
+                    <div id="electricChecking"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
